@@ -2,7 +2,7 @@ Aplicación para android  que controla el led 13 de una placa arduino UNO conect
 
 En la siguiente imagen se muestran las conexiones necesarias. El led rojo es opcional, ya que la placa arduino UNO tiene un led integrado conectado al pin 13.
 
-![alt conexiones](https://raw.githubusercontent.com/cochayuyo/bluetoothLed/master/arduino-bluetooth.png)
+![Conexiones](arduino-bluetooth.png)
 
 
 
