@@ -3,10 +3,12 @@ Aplicación para android  que controla el led 13 de una placa arduino UNO conect
 
 # Instalación
 Descargar la apliación ArduinoBluetoothControl.apk desde el siguiente enlace y luego instalarla en el teléfono celular.
+
 ![Código QR](https://github.com/cochayuyo/bluetoothLed/blob/master/qr_img.png)
 
 # Conexiones
 En la siguiente imagen se muestran las conexiones necesarias. El led rojo es opcional, ya que la placa arduino UNO tiene un led integrado conectado al pin 13.
+
 ![Conexiones](https://github.com/cochayuyo/bluetoothLed/blob/master/arduino-bluetooth.png)
 
 # Instrucciones
