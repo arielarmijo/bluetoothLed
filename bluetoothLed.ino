@@ -11,10 +11,10 @@ void loop() {
   if (Serial.available()) {
     command = Serial.read();
     switch (command){
-      case 97:
+      case 'a':
         toggle(ledPin);
         break;
-      case 116:
+      case 't':
         Serial.print(digitalRead(ledPin));
         break;
     }
