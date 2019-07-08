@@ -2,7 +2,7 @@
 Aplicación para android  que controla el led 13 de una placa arduino UNO conectado a un módulo bluetooth HC-05.
 
 # Instalación
-Descargar la apliación ArduinoBluetoothControl.apk desde el siguiente enlace y luego instalarla en el teléfono celular.
+Descargar la apliación ![ArduinoBluetoothControl](https://github.com/cochayuyo/bluetoothLed/blob/master/ArduinoBluetoothControl.apk) desde el enlace o escaneando el siguiente código QR. Luego instalarla en el teléfono celular.
 
 ![Código QR](https://github.com/cochayuyo/bluetoothLed/blob/master/qr_img.png)
 
