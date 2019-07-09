@@ -23,5 +23,5 @@ En la siguiente imagen se muestran las conexiones necesarias. El led rojo es opc
 
 # Capturas de pantalla
 <p align="center">
-  <img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot_01.png" alt="screenshot 01"/>
+  <img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-01.png" alt="screenshot 01"/>
 </p>
