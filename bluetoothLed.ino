@@ -1,5 +1,7 @@
+const int numBytes = 3;
+
+byte inBytes[numBytes];
 int ledPin = 13;
-byte command;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
@@ -8,23 +10,18 @@ void setup() {
 }
 
 void loop() {
-  if (Serial.available()) {
-    command = Serial.read();
-    switch (command){
-      case 'a':
-        toggle(ledPin);
+  if (Serial.available() == numBytes) {
+    Serial.readBytes(inBytes, numBytes);
+    switch(inBytes[0]) {
+      case 'G':
+        Serial.write(digitalRead(inBytes[1]));
         break;
-      case 't':
-        Serial.print(digitalRead(ledPin));
+      case 'R':
+        Serial.write(analogRead(inBytes[1]));
+        break;
+      case 'S':
+        digitalWrite(inBytes[1], inBytes[2]);
         break;
     }
-  }
-}
-
-void toggle(int led) {
-  if (digitalRead(led)==HIGH) {
-    digitalWrite(led,LOW);
-  } else {
-    digitalWrite(led,HIGH);
-  }
+  }   
 }
