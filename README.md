@@ -20,3 +20,8 @@ En la siguiente imagen se muestran las conexiones necesarias. El led rojo es opc
 - Habilitar bluetooth y emparejar el modúlo bluetooth HC-05 con el teléfono.
 - Abrir la aplicación, seleccionar en la lista desplegable el dispositivo y presionar el botoón "Conectar".
 - Controlar el estado del led 13 mediante el botón redondo central.
+
+# Capturas de pantalla
+<p align="center">
+  <img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot_01.png" alt="screenshot 01"/>
+</p>
