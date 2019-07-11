@@ -21,7 +21,15 @@ En la siguiente imagen se muestran las conexiones necesarias. El led rojo es opc
 - Abrir la aplicación, seleccionar en la lista desplegable el dispositivo y presionar el botoón "Conectar". En caso de producirse errores durante la conexión, reiniciar el bluetooth en el celular.
 - Controlar el estado del led 13 mediante el botón redondo central.
 
-# Captura de pantalla
-<p align="center">
-  <img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-01.png" alt="screenshot 01"/>
-</p>
+# Capturas de pantalla
+
+|               |               |        |
+| :-----------: |:-------------:| :-----:|
+| ![Screenshot 1](https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-01.png)      | ![Screenshot 2](https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-02.png) | ![Screenshot 3](https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-03.png) |
+
+
+
+
+
+
+
