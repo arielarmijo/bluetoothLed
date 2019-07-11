@@ -21,13 +21,15 @@ Descargar la apliación desde este enlace: [ArduinoBluetoothControl](https://git
 - Controlar el estado de los leds 13, 12 y 11 mediante los botones. Controlar el brillo del led 10 con el control deslizante. Observar el valor del pin analógico 0 en la etiqueta.
 
 # Capturas de pantalla
-
-|               |               |        |
-| :-----------: |:-------------:| :-----:|
-| ![Screenshot 1](https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-01.png)      | ![Screenshot 2](https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-02.png) | ![Screenshot 3](https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-03.png) |
-
-
-
+<p align="center">
+<table style="width:100%">
+  <tr>
+    <th><img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-01.png" alt="Screenshot 1"/></th>
+    <th><img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-02.png" alt="Screenshot 2"/></th> 
+    <th><img src="https://github.com/cochayuyo/bluetoothLed/blob/master/screenshots/screenshot-03.png" alt="Screenshot 3"/></th>
+  </tr>
+</table>
+</p>
 
 
 
