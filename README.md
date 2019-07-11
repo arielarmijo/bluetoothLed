@@ -9,7 +9,7 @@ Descargar la apliación desde este enlace: [ArduinoBluetoothControl](https://git
 
 # Conexiones
 <p align="center">
-  <img src="https://github.com/cochayuyo/bluetoothLed/blob/master/arduino-bluetooth.png" alt="Conexiones"/>
+  <img src="https://github.com/cochayuyo/bluetoothLed/blob/master/conexiones.png" alt="Conexiones" width="75%" height="75%" />
 </p>
 
 # Instrucciones
