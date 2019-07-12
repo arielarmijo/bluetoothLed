@@ -31,6 +31,118 @@ Descargar la apliación desde este enlace: [ArduinoBluetoothControl](https://git
 </table>
 </p>
 
+# Protocolo de conexión
+El protocolo de conexión consta de una petición hecha por la aplicación y su respectiva respuesta producida por arduino. La petición consta invariablemente de 3 bytes organizados de la siguiente manera:
+  - Byte 1: acción a realizar. Puede ser una acción de lectura o escritura sobre cualquier pin de arduino.
+  - Byte 2: pin sobre el cual realizar la acción.
+  - Byte 3: valor necesario para realizar la acción. Las acciones de lectura no ocupan este bit, pero igualmente debe ser enviado.
+
+Las peticiones de escritura no generan mensajes de respuesta. Por otro lado, las acciones de lectura provocan respuestas de 1 byte cuando la lectura es de un pin digital y de 4 bytes cuando es un pin analógico.
+
+<p align="center">
+<table style="width:100%">
+  
+  <tr>
+    <th>Petición</th>
+    <th>Acción</th>
+    <th>Respuesta</th> 
+  </tr>
+  
+  <tr>
+    <td><table>
+          <tr>
+            <th>Byte1</th>
+            <th>Byte2</th>
+            <th>Byte3</th>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>2 a 13</td>
+            <td>0</td>
+          </tr>
+        </table>
+    </td>
+    <td>digitalRead(pin)</td>
+    <td>1 byte: 0 ó 1</td> 
+  </tr>
+  
+  <tr>
+    <td><table>
+          <tr>
+            <th>Byte1</th>
+            <th>Byte2</th>
+            <th>Byte3</th>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>2 a 13</td>
+            <td>0 ó 1</td>
+          </tr>
+        </table>
+    </td>
+    <td>digitalWrite(pin, valor)</td>
+    <td>Sin respuesta</td> 
+  </tr>
+  
+  <tr>
+    <td><table>
+          <tr>
+            <th>Byte1</th>
+            <th>Byte2</th>
+            <th>Byte3</th>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td>14 a 18</td>
+            <td>0</td>
+          </tr>
+        </table>
+    </td>
+    <td>analogRead(pin)</td>
+    <td>4 bytes: 0 a 1023</td> 
+  </tr>
+  
+  <tr>
+    <td><table>
+          <tr>
+            <th>Byte1</th>
+            <th>Byte2</th>
+            <th>Byte3</th>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>3,5,6,9,10,11</td>
+            <td>0 a 255</td>
+          </tr>
+        </table>
+    </td>
+    <td>analogWrite(pin, valor)</td>
+    <td>Sin respuesta</td> 
+  </tr>
+  
+  <tr>
+    <td><table>
+          <tr>
+            <th>Byte1</th>
+            <th>Byte2</th>
+            <th>Byte3</th>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </table>
+    </td>
+    <td>Obtiene el valor de PWM</td>
+    <td>1 bytes: 0 a 255</td> 
+  </tr>
+  
+</table>
+</p>
+
+
+
 
 
 
